@@ -1,9 +1,9 @@
 ---
 name: academic-writing
-description: Draft, revise, and polish STEM manuscripts, grants, abstracts, and reviewer responses. Use for scientific argument, claim-evidence alignment, substantive editing, and precise prose; match review depth to the requested edit.
+description: Draft, polish, and review STEM manuscripts, supplements, grants/proposals, award/fellowship, conference, and academic job applications, plus referee reports and reviewer responses. Use for scientific argument, evidence fidelity, application fit, and precise prose.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Academic Writing
@@ -12,27 +12,30 @@ Make the scientific argument clear and assessable while preserving the author's 
 
 ## Choose the work actually requested
 
-Infer document type, audience, authoritative source, and edit depth from the request and available files. Ask only for information that changes the work. Honor review-before-editing instructions. For a light polish, edit directly and flag a material scientific concern briefly; do not turn it into an unsolicited full review.
+Infer the artifact, audience, author/reviewer role, authoritative source, and edit depth. Ask only for missing information that changes the work. Honor review-before-editing instructions. For a light polish, edit directly using the shared rules; load a reference only if its guidance changes the edit. Flag a material scientific concern briefly without launching an unsolicited full review.
 
 Read only the references relevant to the task:
 
 | Task | Reference |
 | --- | --- |
 | Manuscript planning, substantive revision, abstract, or public summary | [Manuscript and prose](references/manuscript-and-prose.md) |
+| Supplementary methods, figures, tables, data, or main-text/SI consistency | [Supplementary information](references/supplementary-information.md) |
 | Scientific critique, claim audit, or polishing with scientific thinking | [Scientific review](references/scientific-review.md) before wording changes |
 | Grant development, proposal critique, aims, or resubmission | [Grant review](references/grant-review.md); also scientific review when assessing the science |
+| Award/fellowship, conference/travel, or academic job application materials | Relevant branch of [Academic applications](references/academic-applications.md); add grant review for a substantive research plan |
+| Giving a paper/proposal review or drafting a referee/panel report | [Peer review](references/peer-review.md), using scientific review for evidence appraisal |
 | Responding to reviewer or panel comments; checking a revision | [Reviewer responses](references/reviewer-response.md) |
 
 ## Shared method
 
-1. Identify the central claim or objective and what evidence the available material actually supplies. Keep completed findings, proposed work, interpretation, and speculation distinct.
-2. For substantial work, build an evidence outline: paragraph or section purpose, claim, supporting result or source, and unresolved gap. Use a compact claim table only when it helps manage several claims.
-3. Fix argument and organization at the requested depth, then sentence-level wording. Make paragraph roles and inferential steps explicit. Preserve supported strengths as well as limitations.
-4. Verify the changed content against source material, figures, citations, and repeated quantities. If the requested checks require unavailable results or files, identify the specific limit and finish the supported work.
+1. Establish the central claim, objective, or selection criterion and the evidence supplied. Distinguish findings, proposed work, interpretation, and speculation.
+2. For substantial work, outline paragraph purpose, claim, support, and unresolved gap. Use a table only when it helps track several claims or requirements.
+3. Improve argument and organization at the requested depth, then wording. Preserve supported strengths, limitations, and author voice.
+4. Check changes against sources, figures, citations, repeated quantities, and companion documents. Identify unavailable evidence and finish the supported work.
 
 ## Scientific fidelity
 
-- Never supply plausible missing results, citations, methods, sample sizes, uncertainty, approvals, partner commitments, or completed actions. Mark a needed fact or leave it out.
+- Never invent results, citations, methods, sample sizes, uncertainty, achievements, approvals, commitments, or completed actions. Mark a needed fact or leave it out.
 - Preserve numerical values, units, denominators, comparison groups, conditions, statistical meaning, technical terms, citation keys, equations, labels, and cross-references. Flag apparent errors instead of silently choosing a replacement.
 - Match confidence to evidence. Association does not establish causation; a null test does not establish equivalence; a fitted or simulated result does not establish experimental performance.
 - Treat a missing report as unknown, not proof that a procedure was omitted. Distinguish a scientific limitation from a documentation gap.
@@ -41,8 +44,8 @@ Read only the references relevant to the task:
 
 ## Deliver the requested artifact
 
-For light edits, return the revised prose. For substantive edits, add a short account of important scientific or structural changes and unresolved evidence needs. For review-only work, give prioritized findings with locations, implications, and feasible remedies. For reviewer work, keep response text and proposed document changes distinguishable.
+For light edits, return revised prose. For substantive edits, briefly explain important changes and unresolved evidence needs. For review-only work, give located, prioritized findings and feasible remedies. Keep reviewer responses separate from proposed document changes; distinguish referee reports from author rebuttals.
 
 When editing files, use the project's authoritative source and established build tools. Check the rendered output when claiming layout or page compliance. Count words or characters deterministically when the task has a strict limit; state the counting convention.
 
-Before finishing, check that the title, abstract, main text, conclusions, and figures agree on the contribution, scope, and uncertainty wherever those materials are available. State what was verified and what remains unresolved without claiming submission readiness from prose quality alone.
+Check agreement across available sections, displays, supplements, or application documents on claims, scope, roles, and status. State verification limits; prose quality alone does not establish submission readiness.

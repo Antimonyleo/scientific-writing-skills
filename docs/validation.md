@@ -37,3 +37,38 @@ Earlier development evaluations exposed one wording ambiguity: editing authority
 This is a small synthetic forward test of the updated skills, not a statistical benchmark. There was no comparison against the original July skills, no independent human scientific panel, no empirical grant or publication outcome measurement, and no automatic-discovery test in Claude Code or other hosts. The evaluators were separate agents in the same Codex environment; this does not establish performance across models.
 
 The GitHub Actions workflow repeats package and installer checks. A local pass is recorded above; remote CI results must be checked separately after publication.
+
+## Academic-writing v1.1.0 expansion: October 23, 2026
+
+The entrypoint grew from 631 to 644 whitespace-separated words, including metadata. Three conditional references were added: supplementary information (510 words), academic applications (818 words), and peer review (641 words). The other two skill packages were unchanged. Reference detail is loaded only when relevant, rather than adding all of it to every writing task.
+
+### Research and test setup
+
+The [research review](research.md#academic-writing-expansion-october-23-2026) documents nine inspected skill entrypoints across six repositories, official skill-authoring guidance, and primary genre guidance. It distinguishes selected-section inspection from full-package execution, records source-access limits, and states the adopted design rules.
+
+Ten [synthetic prompts](../evals/expansion-prompts.json) and [criteria](../evals/expansion-criteria.md) were fixed before changing the skill. A frozen copy was checked byte-for-byte against the published v1.0.0 files in commit `c3d1b01c110966d22e22903c110c7df42451f2e7`. Separate fresh agents executed the baseline and revised skill with the same prompts, without criteria, authoring context, or each other's outputs. A third fresh agent assessed both outputs against the fixed criteria and verified the requested counts with Python. The assessment was not blinded to version labels.
+
+### Observed results
+
+| Scenario | Baseline | Revised skill |
+| --- | --- | --- |
+| S1: main/SI evidence conflicts, methods, labels, and availability | Meets criteria | Meets criteria |
+| A1: award contribution, impact limits, and publication status | Meets criteria | Meets criteria |
+| A2: fellowship development/research separation and host commitments | Meets criteria | Meets criteria |
+| A3: conference abstract/travel fields, status, need, and word limits | Meets criteria | Meets criteria |
+| A4: academic job package and truthful teaching evidence | Meets criteria | Meets criteria |
+| P1: soundness-based referee report and advisory recommendation | Meets criteria | Meets criteria |
+| P2: prospective proposal review under the supplied rubric | Meets criteria | Meets criteria |
+| E1: light award polish preserves factual status | Meets criteria | Meets criteria |
+| R1: reviewer response keeps unperformed kinetics pending | Meets criteria | Meets criteria |
+| E2: light reviewer-report polish preserves the judgment | Meets criteria | Meets criteria |
+
+Actual outputs: [baseline](../evals/expansion-baseline.md), [revised](../evals/expansion-candidate.md), and [independent assessment](../evals/expansion-assessment.md). Task outputs are preserved; execution-record paths were normalized for portability. Independently verified counts were 34 versus 23 words for the award statement, 52 versus 52 for the conference abstract, and 39 versus 31 for the travel statement. All met the supplied limits under Python `len(text.split())`; shorter output alone is not a quality improvement.
+
+Both versions disclosed missing impact and financial-need evidence rather than inventing it. No material unsupported claim or scope failure was identified in either execution. These cases demonstrate explicit supported coverage and regression behavior; they do not demonstrate candidate superiority. The new references make the intended genre decisions available and maintainable even though the capable baseline already handled these examples.
+
+### Package checks and limits
+
+The bundled validator and the installed Skill Creator validator passed, as did all four installer tests using temporary fixtures. No new runtime script, paid service, required companion skill, or automatic delegation was added. User research documents and machine-specific identifiers were excluded from publication files.
+
+This is one execution per version per synthetic task, in the same Codex environment. There was no independent human panel, multi-model study, full-document rendering, actual applicant-record verification, or measurement of successful submissions. Automatic skill discovery in any host remains untested. These limits are separate from passing package checks and remote CI.

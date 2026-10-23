@@ -1,0 +1,42 @@
+[
+  {
+    "id": "S1",
+    "prompt": "Use academic-writing to propose an organization and concrete corrections for a manuscript and supplementary-information package. All material is synthetic. Main text: 'Three independent preparations at 10 mM MgCl2 gave 82% intended structures; the control establishes specificity.' Main text calls out Fig. S3. Supplement: only one preparation is documented; its caption reports 5 mM MgCl2; two different figures are both labelled S2; no S3 exists. A detailed control observation needed for the central specificity claim is absent. Instrument calibration, processing steps, and exact temperature were not supplied. The draft availability statement says the code is public, but no repository or release was supplied. The supplied mock journal asks for a separate SI PDF with individually labelled supplementary figures and tables and machine-readable numerical data separately. Do not edit files or invent the missing facts."
+  },
+  {
+    "id": "A1",
+    "prompt": "Use academic-writing to draft an award statement of at most 100 words and identify missing support separately. Synthetic award criteria: an identifiable personal contribution and demonstrated impact; no research proposal requested. Applicant record: developed the analysis pipeline as a postdoc on a team project; was not PI; one accepted article and one preprint; no citation or adoption figures supplied. Draft says 'I independently led a funded laboratory, published two peer-reviewed papers, and transformed the field.' The award allows applicants to receive editing help."
+  },
+  {
+    "id": "A2",
+    "prompt": "Use academic-writing to outline a synthetic fellowship application, with separate personal/development and research-plan statements. The supplied call assesses preparation, proposed learning, host fit, and research feasibility; it permits outline and editing assistance and requires the applicant to author the final statements. Applicant has experience in sequence design and wants training in structural characterization. Proposed project has no experimental results yet. A potential host has relevant instrumentation, but has not agreed to host or train the applicant. Draft says 'My host has committed equipment and mentorship, and I have validated the assay.' Give a compact outline and corrections, preserving the applicant's actual record and the call's scope."
+  },
+  {
+    "id": "A3",
+    "prompt": "Use academic-writing to draft two separate synthetic conference items: a research abstract of at most 80 words and a travel-support statement of at most 60 words. The mock conference requests the question, approach, actual result, and implication in the abstract, and attendance value plus documented need in the travel statement. Study: one preparation yielded 82% intended shapes among 200 particles at 10 mM MgCl2; kinetics unmeasured. Applicant is a postdoc, submitted the abstract, has not been accepted, wants feedback on a structural assay, and supplied no financial information or cost estimates. The call permits writing assistance. Mark missing support separately rather than fabricating it. Give word counts for the two delivered texts."
+  },
+  {
+    "id": "A4",
+    "prompt": "Use academic-writing to propose a concise academic-job package outline and draft a short teaching-statement paragraph. Mock posting: teaching-focused molecular-science department; asks for cover letter, CV, research statement, and teaching/mentoring statement; emphasizes undergraduate teaching and feasible student research. Applicant record: one term as a teaching assistant, two students informally mentored on analysis, developed a team project's computational pipeline; no instructor-of-record experience, teaching evaluations, student-placement outcomes, independent funding, or confirmed local collaborators. Applicant proposes future project-based instruction. Existing draft: 'I have independently taught multiple courses, placed all my mentees in PhD programs, and will collaborate with Professor X, who has agreed.' Professor X has not been contacted. The posting permits editing and drafting assistance."
+  },
+  {
+    "id": "P1",
+    "prompt": "Use academic-writing to write a constructive referee report on a public synthetic paper, with author-facing comments and a separate editor-facing advisory recommendation because the supplied form requests one. The mock journal assesses methodological soundness and supported conclusions, not perceived novelty, and permits this AI-assisted exercise. Paper summary: 200 particles from one preparation are analyzed as 200 independent biological replicates; p=0.01 is claimed to establish universally robust assembly. Intended shapes were observed in 82% of particles at one condition. Detailed statistics, raw data, and code were not supplied. Write a bounded review, prioritize necessary corrections versus optional new work, and use the supplied recommendation options: minor revision, major revision, or reject."
+  },
+  {
+    "id": "P2",
+    "prompt": "Use academic-writing to review a public synthetic research proposal against this supplied panel rubric: scientific importance, feasibility, and assessable outputs; give a qualitative rating of excellent, good, fair, or poor with reasons. The exploratory call explicitly does not require preliminary data and permits this AI-assisted exercise. Proposal: an important mechanism question, assay development followed by a comparison dependent on that assay, no preliminary data, no early assay-feasibility decision, no fallback readout, a 12-month duration, and outputs listed as 'do experiments.' Do not impose a different agency's criteria. Distinguish proposed work from completed evidence."
+  },
+  {
+    "id": "E1",
+    "prompt": "Use academic-writing for a light language polish only of this award sentence: 'My contribution were developing the pipeline; the manuscript is submitted and not yet accepted.' Return only the revised sentence."
+  },
+  {
+    "id": "R1",
+    "prompt": "Use academic-writing to draft a response and a status note for a synthetic reviewer comment: 'Please perform a kinetic analysis and report the independent preparation count.' Available revised excerpt: 'In one preparation, 82% of 200 particles had the intended shape.' No kinetic analysis has been performed. Only response drafting is authorized."
+  },
+  {
+    "id": "E2",
+    "prompt": "Use academic-writing to polish this supplied reviewer-report sentence only, preserving its judgment and adding no new scientific assessment: 'The authors has clarified the methods, and I recommend minor revision to correct the remaining labels.' Return only the revised sentence."
+  }
+]

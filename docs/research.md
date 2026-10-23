@@ -56,3 +56,61 @@ Web retrieval of one Nature Portfolio reporting-policy page encountered an authe
 These procedures support expert work; they do not certify scientific validity, publication acceptance, grant success, or policy compliance. Policies, database coverage, reporting guidance, and host discovery can change. Runtime instructions therefore call for checking the actual current source when it governs the requested task.
 
 The release includes synthetic behavioral scenarios and package checks. Their observed results and limitations belong in [validation.md](validation.md). A later comparative effectiveness claim would require a fixed baseline, representative documents, blinded assessment, and results across the actual target models and hosts.
+
+## Academic-writing expansion: October 23, 2026
+
+The next review addressed explicit gaps in supplementary-information preparation, awards and fellowships, conference/travel applications, academic job packages, and giving formal paper/proposal reviews. It retained the three skills and expanded only `academic-writing`. Source access dates below are UTC. This remains a targeted deep comparison, not a census or ranking of the skill ecosystem.
+
+### Similar skills inspected
+
+Exact entrypoint paths and blob hashes are recorded in [compared-skills.json](compared-skills.json). Entrypoints were inspected for instructions and routing; their supporting libraries and execution quality were not audited. Selected sections of the unusually long pre-submission orchestrator were inspected, rather than treating its full package as reviewed.
+
+| Source | Lesson used | Boundary retained here |
+| --- | --- | --- |
+| [Career Document Architect](https://github.com/lyndonkl/claude/blob/main/skills/career-document-architect/SKILL.md) | Link a coherent application narrative to evidence and institutional fit | Do not import fixed page counts, legacy biosketch formats, numeric quality cutoffs, or generic achievement examples as applicant facts |
+| [Career Development](https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/career-development/SKILL.md) | Tailor to the requested artifact, actual contribution, and current role; preserve publication and commitment status | Keep broader career choices and negotiation outside this writing workflow |
+| [Publishing and Peer Review](https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/publishing-and-peer-review/SKILL.md) | Distinguish author, reviewer, and editor-facing actions; make requested work proportional to the retained claim | Do not turn an editing request into publication strategy or an unsolicited review |
+| [Scientific Writing](https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/scientific-writing/SKILL.md) | Choose structure, rhetoric, or sentence intervention according to the user's actual request | Avoid mandatory whole-paper diagnosis for local polishing |
+| [Paper Review](https://github.com/WenyuChiou/academic-writing-skills/blob/main/skills/paper-review/SKILL.md) | Load the smallest relevant modules; distinguish verified requirements, scientific concerns, and preferences | Avoid adopting named reviewer personas or domain-specific overlays as general STEM rules |
+| K-Dense [Scientific Writing](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-writing/SKILL.md) and [Peer Review](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/peer-review/SKILL.md) | Trace claims and displays to evidence and distinguish reported detail from independently checked results | Do not impose per-claim registries or elaborate intake machinery on ordinary writing; allow a requested advisory recommendation under the actual review form |
+| [Pre-submission Reviewer](https://github.com/mdenolle/academic-practice-agents/blob/main/pre-submission-agent/skills/pre-submission-reviewer/SKILL.md) | Keep review provenance and reconcile prior comments against revisions | Do not require a large agent team, author examination, lab rubric, or suppression of newly found validity issues in unchanged text |
+
+The formerly linked `jjfroehlich/agent-skills-for-academic-research` repository redirected to `agent-handbook-for-life-science-research`; the inspected source uses the latter name. Similar skills supply design examples, not proof of effectiveness or authority over a user's institution. No source file or code was copied into this package.
+
+### Authoring guidance and operating rules
+
+The review read official [OpenAI guidance on concise skills](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra), [OpenAI skill evaluations](https://developers.openai.com/blog/eval-skills), [Anthropic skill-authoring practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices), the [Agent Skills specification](https://agentskills.io/specification), and the [Anthropic Skill Creator implementation](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md). The local Codex Skill Creator also governed implementation. Source instructions were compared rather than blindly merged: broad, emphatic trigger language in one implementation conflicts with the goal of precise selection across a large installed skill set.
+
+The resulting rules for this expansion are:
+
+1. Keep the description short but name the actual document families, including supplements, applications, and reports. Keep detailed trigger distinctions in a small routing table.
+2. Add reusable decisions that change the output. Preserve light editing, author voice, and task scope; avoid a fixed itinerary for every request.
+3. Link conditional detail directly from the entrypoint. Add three references instead of more globally discoverable skills or a nested routing framework.
+4. Separate evidence, claimed status, proposed actions, and actual verification. In applications this includes personal contribution, acceptance, funding, teaching, and host agreement.
+5. Let actual venue/call requirements govern. Page limits, criteria, required statements, comment channels, and permitted assistance vary; examples remain examples.
+6. Match checks to observable outcomes. Fix scenarios and criteria before editing, run the old and revised skill independently, inspect outputs and counts, and separate structural checks from scientific judgment.
+7. Keep models and harnesses out of the core procedure. Add no paid API, mandatory delegation, authoring-time tool name, or new script when prose guidance suffices.
+
+These rules operationalize the sources; they are not claims of universally optimal prompt length or measured effectiveness. Explicit invocation is tested here. Automatic skill selection and performance in other hosts require separate evidence.
+
+### Genre-specific primary guidance
+
+| Verified source | Implication for the expansion |
+| --- | --- |
+| [PLOS supporting information](https://journals.plos.org/plosone/s/supporting-information) | Check item names, captions, files, and packaging against the target venue. Supporting files need their own quality checks; publisher-specific conventions are not universal. |
+| MIT Communication Lab [research statements](https://mitcommlab.mit.edu/aeroastro/commkit/faculty-applications-research-statement/) | Connect an applicant's research direction and evidence to the actual department and role, including feasible student research where relevant. |
+| MIT/Broad Communication Lab [faculty cover letters](https://mitcommlab.mit.edu/broad/commkit/cover-letter-for-a-faculty-position/) | Give a cover letter a distinct role connecting the application; avoid duplicating the CV or importing generic page conventions. |
+| MIT CAPD [teaching philosophy overview](https://capd.mit.edu/resources/teaching-philosophy-statements/) | Relate teaching beliefs to genuine examples. Expanded teaching guidance also draws on the inspected career skills and the supplied applicant evidence, rather than requiring invented outcomes. |
+| [ACS nomination requirements](https://www.acs.org/funding/awards/national/nominations/requirements-and-timeline.html) | Address the award's purpose with attributable accomplishments and complementary support materials. Nominee and nominator roles differ. |
+| [NSF fellowship application guidance](https://www.nsf.gov/funding/initiatives/grfp/applicants/application-help-videos) | Distinguish applicant preparation/development from the research plan, retain authenticity, and follow the governing opportunity and assistance rules. |
+| [Biophysical Society travel awards](https://www.biophysics.org/2027meeting/awards-competitions/travel-awards) | Conference science, participation value, applicant role, and travel support can be distinct requested fields. This inspected call was already closed; it is not evidence of a live opportunity. |
+| [COPE reviewer guidelines](https://doi.org/10.24318/cope.2019.1.9), inspected through the [official PDF](https://members.publicationethics.org/sites/default/files/cope-ethical-guidelines-peer-reviewers-v2_0.pdf) | Make reviews accountable and appropriate to their role, expertise, and process. These ethics principles do not require a permission ceremony for an already authorized public-paper critique. |
+| [PLOS reviewer guidance](https://journals.plos.org/plosone/s/reviewer-guidelines) | Use actual assessment criteria and permitted author/editor channels. Not every journal accepts an unrestricted confidential recommendation section. |
+
+Retrieval limits: the MIT faculty-materials landing page returned HTTP 429, the full MIT teaching-philosophy page returned HTTP 502, and Nature's SI page redirected to authentication. Indexed text from those pages was used only for discovery, not as the sole verification of a new rule. Successful primary sources above establish the retained guidance. Two inspected ACS pages showed different cycle dates, reinforcing the need to resolve governing-source conflicts; no deadline or award amount was embedded in the skill.
+
+### Implementation and evaluation contract
+
+The expansion adds `supplementary-information.md`, `academic-applications.md`, and `peer-review.md`, with direct routing from a compact entrypoint. Existing manuscript, grant, scientific-appraisal, and response guidance remains available. Research and comparisons live in this document, outside the skill's routine context.
+
+Ten synthetic prompts and [assessment criteria](../evals/expansion-criteria.md) were fixed before changing instructions. An unchanged v1.0.0 snapshot supplied the baseline, and separate agents executed the same prompts without criteria or authoring context. Review the resulting artifacts and [validation record](validation.md) before drawing any performance conclusion. Small synthetic tests can demonstrate behaviors and expose defects; they do not establish overall superiority, real application success, or expertise across every discipline.

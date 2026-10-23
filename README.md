@@ -1,14 +1,31 @@
 # Scientific Writing Skills
 
-Three portable Agent Skills for scientific writing, evidence synthesis, and research planning. They support grant and manuscript development, polishing with scientific reasoning, and responding to reviewers.
+Three portable Agent Skills for scientific writing, evidence synthesis, and research planning. They support manuscripts and supplements, proposals, academic applications, polishing with scientific reasoning, and giving or responding to reviews.
 
 | Skill | Use it for |
 | --- | --- |
-| [academic-writing](skills/academic-writing/SKILL.md) | Manuscripts, proposals, abstracts, scientific review, and reviewer responses |
+| [academic-writing](skills/academic-writing/SKILL.md) | Manuscripts/SI, proposals, academic applications, referee reports, and reviewer responses |
 | [literature-review](skills/literature-review/SKILL.md) | Verified citations, related work, evidence synthesis, and scoped or formal reviews |
 | [research-ideation](skills/research-ideation/SKILL.md) | Mechanisms, hypotheses, grant aims, discriminating tests, and research decisions |
 
 Each skill works on its own. Detailed procedures live in references loaded only when needed. The skills require no paid service, API key, particular model, or automatic agent delegation. Literature searches and current venue or funder checks use whatever suitable sources the host can access.
+
+## Writing and review coverage
+
+`academic-writing` supports drafting, substantive revision, and light polishing at the requested depth. It routes to these procedures:
+
+| Artifact or task | Guidance |
+| --- | --- |
+| Manuscripts, abstracts, and public summaries | [Manuscript and prose](skills/academic-writing/references/manuscript-and-prose.md) |
+| Supplementary methods, figures, tables, and data | [Supplementary information](skills/academic-writing/references/supplementary-information.md) |
+| Grants and proposals | [Grant review](skills/academic-writing/references/grant-review.md) |
+| Awards, nominations, and fellowships | [Academic applications](skills/academic-writing/references/academic-applications.md) |
+| Conference abstracts, participation, travel, and session proposals | [Academic applications](skills/academic-writing/references/academic-applications.md) |
+| Academic job cover letters, statements, CVs, and packages | [Academic applications](skills/academic-writing/references/academic-applications.md) |
+| Scientific assessment and referee/panel reports | [Scientific review](skills/academic-writing/references/scientific-review.md) and [Peer review](skills/academic-writing/references/peer-review.md) |
+| Author responses and revision verification | [Reviewer responses](skills/academic-writing/references/reviewer-response.md) |
+
+Actual calls and venue instructions govern requirements. This coverage describes the procedures available, not certification for every discipline, institution, or application.
 
 ## Install
 
@@ -67,6 +84,6 @@ python3 scripts/validate.py
 python3 scripts/test_install.py
 ```
 
-Maintain reusable procedures in the skills and project-specific source paths, build commands, and editing conventions in the project's `AGENTS.md` or equivalent. Run the [behavioral scenarios](evals/scenarios.md) when changing substantive workflow guidance. The validator checks package structure and references, not scientific judgment.
+Maintain reusable procedures in the skills and project-specific source paths, build commands, and editing conventions in the project's `AGENTS.md` or equivalent. Run relevant [original scenarios](evals/scenarios.md) and [application/SI/review scenarios](evals/expansion-prompts.json) when changing substantive workflow guidance. The [expansion criteria](evals/expansion-criteria.md) are kept separate from executor prompts. The validator checks package structure and references, not scientific judgment.
 
 MIT licensed. Source links are attribution and verification aids; installing these skills does not require adding a software citation to every scientific document.

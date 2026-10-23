@@ -5,7 +5,8 @@
     "blob_sha": "446993fcd4716ae54ab74bc2a91e3bc5af5235c7",
     "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-writing/SKILL.md",
     "accessed_utc": "2026-10-23",
-    "use": "Comparative design review; no files or code vendored"
+    "use": "Comparative design review; no files or code vendored",
+    "expansion_review_utc": "2026-10-23"
   },
   {
     "repository": "K-Dense-AI/scientific-agent-skills",
@@ -21,7 +22,8 @@
     "blob_sha": "d4f3c3e3b5c19fec2518d569ded7e37ac96a964b",
     "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/peer-review/SKILL.md",
     "accessed_utc": "2026-10-23",
-    "use": "Comparative design review; no files or code vendored"
+    "use": "Comparative design review; no files or code vendored",
+    "expansion_review_utc": "2026-10-23"
   },
   {
     "repository": "K-Dense-AI/scientific-agent-skills",
@@ -54,5 +56,68 @@
     "url": "https://github.com/blader/humanizer/blob/main/SKILL.md",
     "accessed_utc": "2026-10-23",
     "use": "Compared voice preservation and style heuristics; no files vendored"
+  },
+  {
+    "repository": "lyndonkl/claude",
+    "path": "skills/career-document-architect/SKILL.md",
+    "blob_sha": "c468c37fd60dbb6ca6e4c68726eb17b7e65eb9e5",
+    "url": "https://github.com/lyndonkl/claude/blob/main/skills/career-document-architect/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "WenyuChiou/academic-writing-skills",
+    "path": "skills/paper-review/SKILL.md",
+    "blob_sha": "e1c668e2470ae3c2b6f2d6d2c086531863f1c37b",
+    "url": "https://github.com/WenyuChiou/academic-writing-skills/blob/main/skills/paper-review/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "anthropics/skills",
+    "path": "skills/skill-creator/SKILL.md",
+    "blob_sha": "65b3a402dbd09b8e83f9d637c6b553875189085c",
+    "url": "https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "jjfroehlich/agent-handbook-for-life-science-research",
+    "path": "skills/career-development/SKILL.md",
+    "blob_sha": "2437271973b50240c78d28488894fb1ba5e281bf",
+    "url": "https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/career-development/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "jjfroehlich/agent-handbook-for-life-science-research",
+    "path": "skills/publishing-and-peer-review/SKILL.md",
+    "blob_sha": "ebbc06a8e02e4f7daece8fe1a3ccb8b9d256c41f",
+    "url": "https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/publishing-and-peer-review/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "jjfroehlich/agent-handbook-for-life-science-research",
+    "path": "skills/scientific-writing/SKILL.md",
+    "blob_sha": "5f9a27f472a470efc9f889e935169a7395ed9959",
+    "url": "https://github.com/jjfroehlich/agent-handbook-for-life-science-research/blob/main/skills/scientific-writing/SKILL.md",
+    "scope": "Entrypoint design review; supporting packages not executed",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
+  },
+  {
+    "repository": "mdenolle/academic-practice-agents",
+    "path": "pre-submission-agent/skills/pre-submission-reviewer/SKILL.md",
+    "blob_sha": "13d8c33725f9720f45bb9d42df92f81a0d4cdfd3",
+    "url": "https://github.com/mdenolle/academic-practice-agents/blob/main/pre-submission-agent/skills/pre-submission-reviewer/SKILL.md",
+    "scope": "Selected entrypoint sections; no execution",
+    "accessed_utc": "2026-10-23",
+    "use": "Academic-writing expansion design comparison; no third-party files vendored"
   }
 ]

@@ -1,0 +1,38 @@
+# Independent assessment of expansion executions
+
+Both versions satisfy the fixed observable criteria in these ten executions. I found no material unsupported claim, fabricated completion, or missed requested scope in either version. This sample shows no observed criterion-level improvement from the candidate; wording and length differences alone do not establish improvement.
+
+This is **not a blinded comparison**: the baseline and candidate paths identified the versions. I read only `expansion-prompts.json`, `expansion-criteria.md`, and the two authorized `outputs.md` files. I did not inspect the skills, research documents, parent reasoning, or other artifacts; no network access or repository edits were used.
+
+Locators below use **B** = `expansion-baseline.md` and **C** = `expansion-candidate.md`; line numbers refer to those files.
+
+| ID | Baseline: concrete pass or gap | Candidate: concrete pass or gap | Comparison |
+| --- | --- | --- | --- |
+| S1 | Identifies the preparation and MgCl2 conflicts, duplicate S2/missing S3, absent central control, missing calibration/processing/temperature, and unverified public code. Requires record reconciliation rather than selecting facts; separates SI PDF from numerical data. B:3–22. | Covers the same conflicts, evidence gaps, and packaging; explicitly says not to replace three preparations silently or invent a figure/link. C:3–22. | Both satisfy all S1 criteria. The conflicting facts remain unresolved in both, as the prompt requires. |
+| A1 | Identifies personal pipeline work within a team, preserves one accepted article/one preprint, removes unsupported leadership/funding/impact claims, and separately flags demonstrated impact as unsupported. Statement is 34 words. B:24–30. | Identifies the same personal role and publication statuses; separately flags impact and any pipeline-to-output relationship as unconfirmed. Statement is 23 words. C:24–32. | Both satisfy the drafting criteria. Neither can demonstrate award impact from the supplied record; both explicitly disclose that input gap. |
+| A2 | Separates personal/development and research outlines; ties sequence-design preparation to characterization training and potential host instrumentation; corrects commitment/validation claims and states final applicant authorship. B:32–51. | Makes the same separation, host contingency, proposed-assay status, training connection, and final-authorship requirement explicit. C:34–52. | Both satisfy all A2 criteria; neither asserts host agreement or completed results. |
+| A3 | Distinct abstract/travel paragraphs retain one preparation, 200 particles, 82%, 10 mM MgCl2, and submitted/unaccepted status. Does not invent need or costs; explicitly flags financial information and the unmet need criterion. Counts are accurate and within limits. B:53–65. | Distinct paragraphs retain the same measurement scope; abstract explicitly says kinetics unmeasured, travel text says acceptance pending; missing financial information and unmet need are separately flagged. Counts are accurate and within limits. C:54–64. | Both satisfy all fixed A3 criteria. The travel statements remain incomplete against documented need because the necessary facts were not supplied; both disclose this rather than fabricate them. |
+| A4 | Gives distinct functions to cover letter, CV, research statement, and teaching/mentoring statement; preserves TA/team/informal-mentoring roles and future teaching plans; removes placement/collaboration claims and aligns with undergraduate teaching and feasible projects. B:67–80. | Provides the same component separation and factual restraint, with proposed computational teaching and student research suited to the posting. C:66–79. | Both satisfy all A4 criteria; neither invents evaluations, independence, funding, outcomes, or an agreed collaboration. |
+| P1 | Prioritizes independent-unit correction, inference limits, and missing assessability materials; distinguishes necessary corrections from optional extensions; uses soundness rather than novelty and provides a separate justified advisory major-revision recommendation. B:82–96. | Covers the same statistical/design issues, missing-but-not-presumed-nonexistent materials, conditional replication requirement, soundness criterion, and separate justified advisory major revision. C:81–95. | Both satisfy all P1 criteria. Neither selects an unsupported replacement statistical test or treats 200 particles as independent preparations. |
+| P2 | Rates Fair under importance, feasibility, and assessable outputs; assesses assay dependency, missing checkpoint/fallback, 12-month planning, and vague outputs; explicitly does not penalize missing preliminary data. B:98–108. | Rates Fair under the same rubric, with the same dependency/checkpoint/fallback/output concerns and an explicit statement that absent preliminary data is not a reason for the rating. C:97–105. | Both satisfy all P2 criteria and remain prospective. No imported agency standard or invented threshold is observed. |
+| E1 | Returns only the polished sentence for this case, correcting agreement while preserving pipeline contribution and submitted/unaccepted status. B:112. | Returns the identical sentence. C:109. | Both satisfy E1; no unsolicited review or workflow appears in either case output. |
+| R1 | Gives preparation count and honestly reports unperformed kinetics; status limits verification to the supplied excerpt, claims no edits or new result, and invents no locator. B:114–124. | Gives the same bounded response and status, explicitly leaving the kinetic request unresolved and verification limited to excerpt wording. C:111–121. | Both satisfy all R1 criteria. Neither represents response drafting as fulfillment of the kinetic-analysis request. |
+| E2 | Corrects “authors has” to “authors have” and preserves the minor-revision judgment without new assessment. B:128. | Returns the identical sentence. C:125. | Both satisfy E2; neither adds an editorial decision. |
+
+## Independent word-count check
+
+I independently extracted the exact delivered statement paragraphs and ran Python `len(text.split())`, excluding headings and support notes. All claimed counts match this whitespace-token convention.
+
+| Text and limit | Baseline declared / verified | Candidate declared / verified |
+| --- | --- | --- |
+| A1 award, at most 100 | 34 / 34 (B:28) | 23 / 23 (C:28) |
+| A3 abstract, at most 80 | 52 / 52 (B:57) | 52 / 52 (C:58) |
+| A3 travel, at most 60 | 39 / 39 (B:61) | 31 / 31 (C:62) |
+
+## Evidence gaps and comparison limits
+
+No actual output defect was identified, so no defect quote is asserted. The material shared incompleteness is acknowledged explicitly: B:30 says “demonstrated impact remains unsupported”; C:30 says “the demonstrated-impact criterion remains unsupported.” B:63 says the travel statement “cannot yet satisfy the documented-need criterion”; C:64 says it “currently addresses attendance value only.” These are missing input evidence, not concealed claims of compliance or newly created defects.
+
+The assessment covers one observed execution per version for ten synthetic prompts. It does not verify the runners' reported file-access histories beyond the supplied outputs, establish causal attribution to a skill change, estimate general effectiveness, compare models, or predict publication/award outcomes. There was no primary-source, raw-data, financial-record, or full-document verification. Style preferences were not converted into numerical scores, and a lack of observed failures is not proof of universal reliability.
+
+Publication note: output locators refer to the corresponding published artifacts; execution-record paths were normalized for portability.
