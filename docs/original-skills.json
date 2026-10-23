@@ -1,0 +1,14 @@
+{
+  "academic-writing": {
+    "origin": "Custom skill written in a Codex session on 2026-07-19",
+    "sha256": "810dcecad44eaa5ba5ec7bf2323705e893128d3eb26e0306b9a49e67530e0dd2"
+  },
+  "literature-review": {
+    "origin": "Custom skill written in a Codex session on 2026-07-19",
+    "sha256": "b27c76cc01ffe0b18924b305a7eb6b6399534c340e7c9722eeeac287bc6535be"
+  },
+  "research-ideation": {
+    "origin": "Custom skill written in a Codex session on 2026-07-19",
+    "sha256": "0b32cffdde5a80f0a4c4836b8d209c9995cbc38871647141fbd11d45c5e83a79"
+  }
+}

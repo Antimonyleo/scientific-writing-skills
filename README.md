@@ -1,2 +1,72 @@
-# scientific-writing-skills
-Portable skills for scientific writing, grant review, literature synthesis, research ideation, and reviewer responses.
+# Scientific Writing Skills
+
+Three portable Agent Skills for scientific writing, evidence synthesis, and research planning. They support grant and manuscript development, polishing with scientific reasoning, and responding to reviewers.
+
+| Skill | Use it for |
+| --- | --- |
+| [academic-writing](skills/academic-writing/SKILL.md) | Manuscripts, proposals, abstracts, scientific review, and reviewer responses |
+| [literature-review](skills/literature-review/SKILL.md) | Verified citations, related work, evidence synthesis, and scoped or formal reviews |
+| [research-ideation](skills/research-ideation/SKILL.md) | Mechanisms, hypotheses, grant aims, discriminating tests, and research decisions |
+
+Each skill works on its own. Detailed procedures live in references loaded only when needed. The skills require no paid service, API key, particular model, or automatic agent delegation. Literature searches and current venue or funder checks use whatever suitable sources the host can access.
+
+## Install
+
+Using the [Skills CLI](https://github.com/vercel-labs/skills), choose the skills, agent, and project or global scope in its interactive prompts:
+
+```bash
+npx skills add Antimonyleo/scientific-writing-skills
+```
+
+Alternatively, clone the repository and copy the desired skill directories to your host's documented skill location. For Codex, a user skill location is `~/.agents/skills`; Claude Code uses `~/.claude/skills`. Consult current host documentation if your setup differs.
+
+The bundled local installer creates copies, preserves replaced directories in a backup folder, and skips identical installations:
+
+```bash
+python3 scripts/install.py --target ~/.agents/skills
+```
+
+Use `--target ~/.codex/skills` to update an existing legacy Codex installation, or `--target ~/.claude/skills` for Claude Code. If a destination is a symlink, inspect its owner and update that source explicitly; the installer refuses to follow or replace it. Do not install duplicate copies in several discovery locations. Newly installed skills may require a new turn or session in your host.
+
+## Examples
+
+```text
+Use academic-writing to review this proposal's scientific argument before polishing.
+Map it to the attached funding call. Propose substantive changes for review first.
+```
+
+```text
+Use academic-writing to draft a point-by-point response. Track every concern,
+distinguish proposed from completed changes, and verify against the revised manuscript.
+```
+
+```text
+Use literature-review to compare these mechanisms. Verify the primary sources,
+explain conflicting evidence, and state the search limits.
+```
+
+```text
+Use research-ideation to propose competing explanations and the smallest experiment
+that distinguishes them. State the independent unit, controls, and decision criteria.
+```
+
+Skill invocation syntax depends on the host. In Codex, explicit invocations can use `$academic-writing`, `$literature-review`, or `$research-ideation`. The descriptions also support automatic selection; automatic discovery must be tested in each host.
+
+## Design and evidence
+
+These are extensions of three custom skills first written in a Codex session on July 19, 2026. They are maintained here as their upstream source. Existing scientific skill collections and primary methodological guidance informed the redesign; no third-party skill package was vendored.
+
+Read the [research and design review](docs/research.md) for sources and tradeoffs, and the [validation record](docs/validation.md) for what was actually checked. Package checks and synthetic examples do not establish improved publication outcomes or performance across models.
+
+The workflows preserve author decisions and evidence boundaries. They do not invent results or citations, certify compliance, or submit documents. Applicable journal, institution, and funder rules remain controlling.
+
+## Maintenance
+
+```bash
+python3 scripts/validate.py
+python3 scripts/test_install.py
+```
+
+Maintain reusable procedures in the skills and project-specific source paths, build commands, and editing conventions in the project's `AGENTS.md` or equivalent. Run the [behavioral scenarios](evals/scenarios.md) when changing substantive workflow guidance. The validator checks package structure and references, not scientific judgment.
+
+MIT licensed. Source links are attribution and verification aids; installing these skills does not require adding a software citation to every scientific document.

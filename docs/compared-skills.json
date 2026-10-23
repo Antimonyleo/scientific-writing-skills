@@ -1,0 +1,58 @@
+[
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/scientific-writing/SKILL.md",
+    "blob_sha": "446993fcd4716ae54ab74bc2a91e3bc5af5235c7",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-writing/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/research-grants/SKILL.md",
+    "blob_sha": "2c936ee59af1bf40481e073574e93636d857ba70",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/research-grants/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/peer-review/SKILL.md",
+    "blob_sha": "d4f3c3e3b5c19fec2518d569ded7e37ac96a964b",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/peer-review/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/scientific-critical-thinking/SKILL.md",
+    "blob_sha": "2a2fc151b5b13e4e11ece7410f21a14d5b25e30d",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-critical-thinking/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/scientific-brainstorming/SKILL.md",
+    "blob_sha": "487a1a0e31c6bf270b3e80818798bab9b4ebc0b9",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/scientific-brainstorming/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "K-Dense-AI/scientific-agent-skills",
+    "path": "skills/literature-review/SKILL.md",
+    "blob_sha": "5178dce6419cee412155e7b9dd523d5b2ef703f5",
+    "url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/literature-review/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Comparative design review; no files or code vendored"
+  },
+  {
+    "repository": "blader/humanizer",
+    "path": "SKILL.md",
+    "blob_sha": "19fc634208e8cc6ae55d4ff287152583216fd244",
+    "url": "https://github.com/blader/humanizer/blob/main/SKILL.md",
+    "accessed_utc": "2026-10-23",
+    "use": "Compared voice preservation and style heuristics; no files vendored"
+  }
+]
