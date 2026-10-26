@@ -1,6 +1,6 @@
 ---
 name: literature-review
-description: Find, verify, and synthesize scholarly evidence for STEM questions, manuscripts, grants, and research gaps. Use for citation checks, related work, narrative reviews, and planned systematic or scoping reviews; report search and evidence limits.
+description: Find, verify, and synthesize scholarly evidence for STEM questions, manuscripts, grants, and research gaps. Use for citation and bibliography checks, related work, narrative reviews, and planned systematic or scoping reviews; report search and evidence limits.
 license: MIT
 metadata:
   version: "1.1.0"

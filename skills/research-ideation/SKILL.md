@@ -1,6 +1,6 @@
 ---
 name: research-ideation
-description: Develop and stress-test STEM research questions, mechanisms, grant aims, and experimental or computational plans. Use for brainstorming, hypothesis generation, discriminating tests, controls, feasibility, and risks, especially molecular engineering and computational biology.
+description: Develop and stress-test STEM research questions, mechanisms, grant aims, and experimental or computational plans. Use for brainstorming, hypothesis generation, stress-testing an existing idea, discriminating tests, controls, feasibility, risks, and choosing what to do next, especially molecular engineering and computational biology.
 license: MIT
 metadata:
   version: "1.1.0"
