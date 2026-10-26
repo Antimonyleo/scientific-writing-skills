@@ -19,7 +19,9 @@ Keep a clear route between the abstract, central claims, and evidence. Do not fo
 
 Give each paragraph a specific job. Put essential context before an unfamiliar inference, keep the subject and verb easy to find, and use transitions that name the logical relationship. Prefer concrete mechanisms and comparisons to promotional adjectives.
 
-Preserve technical terms when synonyms could change meaning. Do not replace every repeated term for stylistic variety. Preserve necessary hedging and distinguish evidence strength from an author's confidence. Improve passive constructions when agency matters; retain them when the procedure or object is the appropriate focus.
+Position often matters more than word choice. Begin a sentence with familiar information that links to the previous one, and end it on the new or important point; a sentence ending on "was observed" wastes its emphasis. Put the action in the verb: "We characterized the assemblies by AFM," not "Characterization of the assemblies was performed by AFM."
+
+Preserve technical terms when synonyms could change meaning. Do not replace every repeated term for stylistic variety. Preserve necessary hedging and distinguish evidence strength from an author's confidence. Match the verb to the evidence, subject to field convention: "show" for replicated, controlled measurements; "indicate" or "suggest" for one preparation, an indirect readout, or a correlation; "predict" or "estimate" for a model or simulation; "will test" for proposed work. Reserve "significant" for a stated statistical test. State a limitation once, as a boundary of the claim ("tested at one salt concentration"), rather than stacking repeated negations. Improve passive constructions when agency matters; retain them when the procedure or object is the appropriate focus.
 
 Reduce filler, repeated framing, invented contrasts, generic importance statements, and inflated claims. Do not apply word bans, punctuation bans, a universal first-person voice, or supposed AI-detector optimization. Match the author's effective voice and the target genre.
 
@@ -37,4 +39,4 @@ Check that proposed edits preserve citation scope, mathematical statements, symb
 
 ## Further reading
 
-Mensh and Kording, [Ten simple rules for structuring papers](https://doi.org/10.1371/journal.pcbi.1005619), provides a reader-focused account of scientific argument and organization. The procedures here also reflect the original local academic-writing skill; they are not a transcription of that article.
+Mensh and Kording, [Ten simple rules for structuring papers](https://doi.org/10.1371/journal.pcbi.1005619), provides a reader-focused account of scientific argument and organization. Gopen and Swan, "The science of scientific writing" (*American Scientist* 78: 550–558, 1990), explains the sentence-position advice. The procedures here also reflect the original local academic-writing skill; they are not a transcription of that article.

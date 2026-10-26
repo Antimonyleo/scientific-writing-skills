@@ -51,6 +51,12 @@ def validate(root):
                 json.loads(path.read_text(encoding="utf-8"))
             except (ValueError, UnicodeError) as error:
                 errors.append(f"{path.relative_to(root)}: {error}")
+    for path in sorted((root / "skills").glob("*/scripts/*.py")):
+        # Bundled helper scripts must at least parse; behavior is tested in tests/.
+        try:
+            compile(path.read_text(encoding="utf-8"), str(path), "exec")
+        except (SyntaxError, UnicodeError) as error:
+            errors.append(f"{path.relative_to(root)}: {error}")
     return errors
 
 
@@ -61,4 +67,4 @@ if __name__ == "__main__":
         print(issue, file=sys.stderr)
     if issues:
         raise SystemExit(1)
-    print("Validated three skill entrypoints, local Markdown links, and JSON records.")
+    print("Validated three skill entrypoints, local Markdown links, JSON records, and bundled scripts.")

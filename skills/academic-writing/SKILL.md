@@ -3,7 +3,7 @@ name: academic-writing
 description: Draft, polish, and review STEM manuscripts, supplements, grants/proposals, award/fellowship, conference, and academic job applications, plus referee reports and reviewer responses. Use for scientific argument, evidence fidelity, application fit, and precise prose.
 license: MIT
 metadata:
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Academic Writing
@@ -12,7 +12,7 @@ Make the scientific argument clear and assessable while preserving the author's 
 
 ## Choose the work actually requested
 
-Infer the artifact, audience, author/reviewer role, authoritative source, and edit depth. Ask only for missing information that changes the work. Honor review-before-editing instructions. For a light polish, edit directly using the shared rules; load a reference only if its guidance changes the edit. Flag a material scientific concern briefly without launching an unsolicited full review.
+Infer the artifact, audience, author/reviewer role, authoritative source, and edit depth. Ask only for missing information that changes the work. Honor review-before-editing instructions and the requested depth. A polish changes wording only, loads a reference only if it changes the edit, and briefly flags at most one or two material scientific problems without an unsolicited review. A revision may reorder and change emphasis. A draft from notes marks every fact the notes do not supply. A review returns located, prioritized findings without rewriting.
 
 Read only the references relevant to the task:
 
@@ -35,7 +35,7 @@ Read only the references relevant to the task:
 
 ## Scientific fidelity
 
-- Never invent results, citations, methods, sample sizes, uncertainty, achievements, approvals, commitments, or completed actions. Mark a needed fact or leave it out.
+- Never invent results, citations, methods, sample sizes, uncertainty, achievements, approvals, commitments, or completed actions. Leave a needed fact out or mark it as `[CITE: …]`, `[DATA: …]`, or `[CHECK: …]` (in LaTeX, `\textbf{[CITE: …]}`; never an invented `\cite` key). If many would be needed, list the questions separately instead.
 - Preserve numerical values, units, denominators, comparison groups, conditions, statistical meaning, technical terms, citation keys, equations, labels, and cross-references. Flag apparent errors instead of silently choosing a replacement.
 - Match confidence to evidence. Association does not establish causation; a null test does not establish equivalence; a fitted or simulated result does not establish experimental performance.
 - Treat a missing report as unknown, not proof that a procedure was omitted. Distinguish a scientific limitation from a documentation gap.
@@ -46,6 +46,8 @@ Read only the references relevant to the task:
 
 For light edits, return revised prose. For substantive edits, briefly explain important changes and unresolved evidence needs. For review-only work, give located, prioritized findings and feasible remedies. Keep reviewer responses separate from proposed document changes; distinguish referee reports from author rebuttals.
 
-When editing files, use the project's authoritative source and established build tools. Check the rendered output when claiming layout or page compliance. Count words or characters deterministically when the task has a strict limit; state the counting convention.
+After revising more than a few sentences or any file, run `python3 <skill-dir>/scripts/check_preservation.py ORIGINAL REVISED` ([script](scripts/check_preservation.py); save pasted text to temporary files). Restore each unintended change it reports in numbers, units, citation keys, labels, or math; state each intended one; rerun until only intended differences remain. It also reports word counts and remaining placeholders. Without a runnable script, compare these items manually and say so. The check is pattern-based and does not assess meaning.
+
+When editing files, use the project's authoritative source and established build tools. For LaTeX, check the build log for undefined citations or references. Check the rendered output when claiming layout or page compliance. Count words or characters deterministically when the task has a strict limit; state the counting convention.
 
 Check agreement across available sections, displays, supplements, or application documents on claims, scope, roles, and status. State verification limits; prose quality alone does not establish submission readiness.
