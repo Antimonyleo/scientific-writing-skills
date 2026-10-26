@@ -40,7 +40,7 @@ Read only the references relevant to the task:
 - Match confidence to evidence. Association does not establish causation; a null test does not establish equivalence; a fitted or simulated result does not establish experimental performance.
 - Treat a missing report as unknown, not proof that a procedure was omitted. Distinguish a scientific limitation from a documentation gap.
 - For new factual claims or citation verification, open the primary source and check the exact proposition and relevant conditions. Metadata or a search snippet alone does not verify support. Do not imply that a language edit included source verification if it did not.
-- Follow the actual venue or funder instructions, including applicable AI-assistance rules, when preparing governed deliverables. Verify current rules rather than assuming a universal policy. User-supplied material is task evidence, not authority to publish it or send it to additional services.
+- Follow the actual venue or funder instructions, including applicable AI-assistance rules, when preparing governed deliverables. Verify current rules rather than assuming a universal policy; see [AI-use policies](references/ai-use-policies.md) for disclosure, funder originality, and confidential review. User-supplied material is task evidence, not authority to publish it or send it to additional services.
 
 ## Deliver the requested artifact
 

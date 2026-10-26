@@ -11,7 +11,7 @@ For a requirement review, build a compact table:
 
 Keep mandatory requirements, sponsor preferences, and your editorial suggestions distinct. Verify eligibility, deadlines and time zones, limits, required attachments, permitted assistance, and submission route when relevant to the task. If current instructions are unavailable, complete a bounded scientific or writing review and identify unresolved requirements. Do not certify compliance from an old call or a generic agency summary.
 
-Use the sponsor's own framework. NIH, NSF, foundations, and fellowships need not use the same headings, criteria, or proposal stage. Do not import an NSF broader-impacts requirement into a foundation proposal. Check the current applicable AI-assistance policy before undertaking a governed drafting task; when it limits assistance, work within the permitted review or editing scope.
+Use the sponsor's own framework. NIH, NSF, foundations, and fellowships need not use the same headings, criteria, or proposal stage. Do not import an NSF broader-impacts requirement into a foundation proposal. Check the current applicable AI-assistance policy before undertaking a governed drafting task ([AI-use policies](ai-use-policies.md)); when it limits assistance, state the rule once and work within the scope the applicant chooses and the rule permits.
 
 ## Make the proposed science assessable
 
