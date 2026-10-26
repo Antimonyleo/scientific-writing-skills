@@ -135,3 +135,22 @@ Runtime guidance in `academic-writing/references/ai-use-policies.md` gives a pro
 | [Wiley AI guidelines](https://www.wiley.com/publishing/article/ai-guidelines) (no date shown) | Authors must disclose AI use; simple grammar correction "typically" does not require disclosure. Reviewers should not upload any portion of submitted manuscripts. | Example only |
 
 The COPE position statement on authorship and AI tools returned HTTP 403 and was not used. The differences above are the reason runtime text requires checking the governing page rather than listing per-publisher rules.
+
+### Reference verification and search services
+
+`literature-review/scripts/verify_refs.py` was ported from a reviewer's proposal with three changes: a User-Agent naming this repository instead of a person, an `ERROR` (registry unreachable) result that fails the run rather than passing as clean, and documentation of what leaves the machine. The optional `CROSSREF_MAILTO` variable is never required and no address is stored in the repository. Offline tests use synthetic records under the Crossref test prefix `10.5555` and mocked registry responses.
+
+Checked on October 26, 2026 against documentation and live keyless requests:
+
+| Service | Observation | Effect on the package |
+| --- | --- | --- |
+| [Crossref REST API access](https://crossref.org/documentation/retrieve-metadata/rest-api/access-and-authentication/) and [rate limits](https://crossref.org/blog/announcing-changes-to-rest-api-rate-limits/) | A `mailto` is optional; without it requests use the public pool (live headers reported 5 single-record requests per second, concurrency 1) | The script pauses between calls and sends no address by default |
+| [Crossref Retraction Watch data](https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/) | The documentation names `update-to`; live records show `updated-by` on the retracted work and `update-to` on the notice, with `source` `retraction-watch` or `publisher` (one retraction can appear under both) | The script reads `updated-by` for retraction status and `update-to` to detect a cited notice |
+| [DOI content negotiation](https://citation.doi.org/docs.html) | CSL JSON requests for a DataCite arXiv DOI redirect to the registration agency and return metadata | Fallback for non-Crossref DOIs |
+| [bioRxiv API](https://api.biorxiv.org/) | `details/biorxiv/{doi}` returns a `published` DOI field (undocumented in the field list) | Published-version check |
+| [arXiv API manual](https://info.arxiv.org/help/api/user-manual.html) and [terms](https://info.arxiv.org/help/api/tou.html) | `<arxiv:doi>` appears only when authors supplied a journal DOI; one request every three seconds | Absence of the field is not evidence of no published version |
+| [OpenAlex searching](https://help.openalex.org/api/searching/) and [authentication](https://help.openalex.org/api/authentication/) | `search.title_and_abstract=` is the documented scoped search; keyless use shares a $0.10 daily budget per IP; responses invite agents to request a key with the user's email | The reference uses the documented parameter and forbids sending the user's email |
+| Europe PMC REST | DOI search returned a `pmcid` and `fullTextXML` for an open-access article; another open-access record returned HTTP 500; documentation pages returned 403 | Full text described as partial and failure-prone |
+| [NCBI E-utilities keys](https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/) | More than three requests per second without a key returns an error | Rate note retained; the NCBI handbook page itself returned a CAPTCHA |
+
+The reviewer's proposed reference also named a field-specific institutional library and a host plugin cache path; both were omitted as machine- or user-specific.

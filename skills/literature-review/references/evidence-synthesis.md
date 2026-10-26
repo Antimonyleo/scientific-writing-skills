@@ -4,10 +4,10 @@
 
 For a substantial synthesis, maintain enough information to check a claim:
 
-| Source and locator | System and conditions | Design, comparator, and independent unit | Finding and uncertainty | Limitation and relevance |
-| --- | --- | --- | --- | --- |
+| Source and locator | System and conditions | Design, comparator, and independent unit | Finding and uncertainty | Limitation and relevance | Read depth |
+| --- | --- | --- | --- | --- | --- |
 
-Record whether the relevant content was examined in the full text, abstract, or another supplied artifact. Keep observation separate from mechanism proposed by the authors. Describe missing uncertainty as unreported; do not reconstruct an error bar from a figure without an explicit, disclosed extraction method.
+Read depth is full text, targeted passages (state whether the supplement was read), abstract, or metadata only. Fill cells only from content actually examined; write "not in abstract" or "not examined" rather than inferring methods, numbers, or limitations. For short requests, a compact table of source, system, finding with conditions and locator, main limitation, and read depth is enough. Report each number with its units, conditions, and locator. Keep observation separate from mechanism proposed by the authors. Describe missing uncertainty as unreported; do not reconstruct an error bar from a figure without an explicit, disclosed extraction method.
 
 Follow related preprints, conference papers, journal versions, and follow-ups. Shared datasets or experiments create dependent evidence even when paper titles differ. A review citing several papers does not supply independent replication if all trace to one experiment.
 
