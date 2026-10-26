@@ -154,3 +154,7 @@ Checked on October 26, 2026 against documentation and live keyless requests:
 | [NCBI E-utilities keys](https://ncbiinsights.ncbi.nlm.nih.gov/2017/11/02/new-api-keys-for-the-e-utilities/) | More than three requests per second without a key returns an error | Rate note retained; the NCBI handbook page itself returned a CAPTCHA |
 
 The reviewer's proposed reference also named a field-specific institutional library and a host plugin cache path; both were omitted as machine- or user-specific.
+
+### Optional Zotero route
+
+The [Zotero local API documentation](https://www.zotero.org/support/dev/web_api/v3/local_api) (checked October 26, 2026) describes the API under `localhost:23119/api/`, user ID `0`, the "Allow other applications on this computer to communicate with Zotero" setting, unpaginated local results, and unauthenticated reads; it also documents write support with a user-granted local key in Zotero 10+, so a reviewer's "read-only" description was outdated. The skill nevertheless uses the library read-only. [Web API basics](https://www.zotero.org/support/dev/web_api/v3/basics) requires an API key for non-public libraries. [Better BibTeX](https://retorque.re/zotero-better-bibtex/) reports that Zotero 8 has a native citation-key field replacing its own. No local Zotero instance was contacted, so the collection route is documented but not exercised here. A reviewer's host-specific plugin commands and cache paths were omitted.

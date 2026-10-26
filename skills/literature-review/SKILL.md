@@ -14,7 +14,7 @@ Produce a traceable answer to the research question, with evidence strength and 
 
 Infer the question, field, comparison, time window, and intended use from the request. A citation check or short background paragraph does not require a systematic-review protocol. For a formal systematic or scoping review, read [Formal reviews](references/formal-reviews.md). For thematic synthesis, conflicting findings, or a research-gap claim, read [Evidence synthesis](references/evidence-synthesis.md). For a substantial search, a search log, or reference checking, read [Search and verification](references/search-and-verification.md).
 
-Use supplied papers, bibliography, and library context first. Search primary studies and official methodological guidance through available databases, publisher sites, repositories, or connected libraries. No particular search provider, paid API, citation manager, or output format is required.
+Use supplied papers, bibliography, and library context first; if the user names a Zotero library, see [Zotero libraries](references/zotero.md). Search primary studies and official methodological guidance through available databases, publisher sites, repositories, or connected libraries. No particular search provider, paid API, citation manager, or output format is required.
 
 ## Search and verify
 
