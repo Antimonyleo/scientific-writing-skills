@@ -5,10 +5,12 @@ Three portable Agent Skills for scientific writing, evidence synthesis, and rese
 | Skill | Use it for |
 | --- | --- |
 | [academic-writing](skills/academic-writing/SKILL.md) | Manuscripts/SI, proposals, academic applications, referee reports, and reviewer responses |
-| [literature-review](skills/literature-review/SKILL.md) | Verified citations, related work, evidence synthesis, and scoped or formal reviews |
-| [research-ideation](skills/research-ideation/SKILL.md) | Mechanisms, hypotheses, grant aims, discriminating tests, and research decisions |
+| [literature-review](skills/literature-review/SKILL.md) | Verified citations, related work, evidence synthesis, reference checking, and scoped or formal reviews |
+| [research-ideation](skills/research-ideation/SKILL.md) | Mechanisms, hypotheses, grant aims, stress-testing, discriminating tests, and research decisions |
 
 Each skill works on its own. Detailed procedures live in references loaded only when needed. The skills require no paid service, API key, particular model, or automatic agent delegation. Literature searches and current venue or funder checks use whatever suitable sources the host can access.
+
+Two skills bundle an optional standard-library script. `literature-review` checks references against public registries for identifier resolution, metadata match, retraction or correction notices, and published preprint versions. `academic-writing` compares an original and a revised text for silently changed numbers, units, citation keys, labels, cross-references, and math. Each is a run, fix, and rerun step with a documented manual fallback; neither needs an account or key, and no contact address is sent unless the user sets one.
 
 ## Writing and review coverage
 
@@ -24,6 +26,7 @@ Each skill works on its own. Detailed procedures live in references loaded only 
 | Academic job cover letters, statements, CVs, and packages | [Academic applications](skills/academic-writing/references/academic-applications.md) |
 | Scientific assessment and referee/panel reports | [Scientific review](skills/academic-writing/references/scientific-review.md) and [Peer review](skills/academic-writing/references/peer-review.md) |
 | Author responses and revision verification | [Reviewer responses](skills/academic-writing/references/reviewer-response.md) |
+| AI-use disclosure, funder originality rules, and confidential review | [AI-use policies](skills/academic-writing/references/ai-use-policies.md) |
 
 Actual calls and venue instructions govern requirements. This coverage describes the procedures available, not certification for every discipline, institution, or application.
 
@@ -82,8 +85,11 @@ The workflows preserve author decisions and evidence boundaries. They do not inv
 ```bash
 python3 scripts/validate.py
 python3 scripts/test_install.py
+python3 -m unittest discover -s tests
 ```
 
-Maintain reusable procedures in the skills and project-specific source paths, build commands, and editing conventions in the project's `AGENTS.md` or equivalent. Run relevant [original scenarios](evals/scenarios.md) and [application/SI/review scenarios](evals/expansion-prompts.json) when changing substantive workflow guidance. The [expansion criteria](evals/expansion-criteria.md) are kept separate from executor prompts. The validator checks package structure and references, not scientific judgment.
+The package checks cover structure, local links, JSON records, installation behavior, and the bundled scripts' offline behavior against synthetic fixtures and mocked registry responses.
+
+Maintain reusable procedures in the skills and project-specific source paths, build commands, and editing conventions in the project's `AGENTS.md` or equivalent. Run relevant [original scenarios](evals/scenarios.md), [application/SI/review scenarios](evals/expansion-prompts.json), and [verification, policy, and ideation scenarios](evals/merge-prompts.json) when changing substantive workflow guidance. The [expansion criteria](evals/expansion-criteria.md) and [merge criteria](evals/merge-criteria.md) are kept separate from executor prompts. The validator checks package structure and references, not scientific judgment.
 
 MIT licensed. Source links are attribution and verification aids; installing these skills does not require adding a software citation to every scientific document.
