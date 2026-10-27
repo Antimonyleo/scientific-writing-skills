@@ -72,3 +72,35 @@ Both versions disclosed missing impact and financial-need evidence rather than i
 The bundled validator and the installed Skill Creator validator passed, as did all four installer tests using temporary fixtures. No new runtime script, paid service, required companion skill, or automatic delegation was added. User research documents and machine-specific identifiers were excluded from publication files.
 
 This is one execution per version per synthetic task, in the same Codex environment. There was no independent human panel, multi-model study, full-document rendering, actual applicant-record verification, or measurement of successful submissions. Automatic skill discovery in any host remains untested. These limits are separate from passing package checks and remote CI.
+
+## Review-improvement merge: October 26, 2026
+
+### Package checks
+
+Completed locally on October 26, 2026 (America/Phoenix; October 27 UTC):
+
+- The bundled validator passed for all three entrypoints, local Markdown links, self-contained skill links, and JSON records. It now also compiles the two bundled skill scripts.
+- The four installer tests passed in temporary fixtures.
+- Twenty-nine new offline unit tests passed on Python 3.13 and on Python 3.9, covering both bundled scripts. The reference tests use synthetic bibliography entries under the Crossref test prefix `10.5555` with mocked registry responses, so they contact no network service. The preservation tests use a synthetic LaTeX excerpt. `python3 -m unittest discover -s tests` is now part of the GitHub Actions workflow; the remote result must be checked separately after publication.
+- `verify_refs.py` was also exercised live against public registries without a contact address: a resolving DOI, an unresolvable DOI, a Retraction Watch retraction, a bioRxiv preprint with its published version, an arXiv identifier, a title-only candidate, and a deliberate DOI/title mismatch each produced the expected status. Eleven primary sources cited in the research notes were checked the same way and matched their registry records.
+- The repository was scanned for personal identifiers and machine-specific paths; the published files contain none. No contact address is stored, and `CROSSREF_MAILTO` remains optional.
+- The external Skill Creator validator was not run in this environment, which has no PyYAML.
+
+### Behavioral scenarios
+
+Six synthetic prompts and their criteria were fixed and committed before execution. A fresh agent received the skill paths and prompts only, with no criteria, authoring context, or validation records, and reported its actual outputs and command results. One execution per prompt; the author assessed the reported outputs against the fixed criteria, so this round had no independent assessor and was not blinded.
+
+| ID | Observed outcome |
+| --- | --- |
+| V1: light polish of a LaTeX fixture | Grammar-only edits; the preservation check reported no differing numbers, units, citation keys, labels, or math; a pre-existing unit-macro problem in the fixture was flagged rather than silently changed; unavailable toolchains and unverified layout were stated |
+| V2: bibliography check | Identified the entry carrying another work's identifier, the unresolvable entry, and the preprint with a published version; resolved the correct identifier and surfaced a recorded erratum; declined an unconfirmed title-search candidate; separated identity verification from claim support and listed what stayed unverified |
+| P3: confidential referee report | Raised the governing confidentiality and assistance rule before processing the manuscript, did not process it while the rule was unknown, and offered permitted alternatives and a conditional route. Its opening refusal was firmer than the guidance intends |
+| P4: disclosure after language editing | Said the rule depends on the venue, directed the user to the governing pages, offered a scoped one-sentence statement, and inserted none |
+| I1: stress-test of one supplied idea | Ranked the idea's load-bearing assumptions with a cheapest refuting observation for each, ordered a disqualifying check first, set go, pivot, and stop rules before data, invented no numbers, and generated no alternative projects. **It did not anchor the idea to the closest prior approach or mark that unverified** |
+| I2: choice between two options | Compared the supplied options on cost to a first informative result, interpretability, what each unlocks or forecloses, and cost of stopping; recommended one with reasons, listed the conditions that would reverse it, and attached no invented budgets or probabilities |
+
+The I1 gap was a real routing defect: the prior-art anchor was attached only to the option-generation route, so a stress-test request skipped it. The stress-test route now includes the anchor. A rerun of I1 could not be completed: this environment's safety classifiers blocked the molecular-delivery prompt for the executor and for the author's own transcript record. **The corrected routing is therefore unverified behaviorally**, and no output transcript is published for this round; the summaries above are the author's record of the executor's report.
+
+### Limits
+
+Six single executions of synthetic prompts, assessed by the author, do not establish scientific quality, reliability across hosts and models, or improvement over the previous version. There was no baseline comparison, no independent or blinded assessment, and no human expert panel for this round. The scripts' checks are pattern-based: `check_preservation.py` finds changed tokens, not changed meaning, and `verify_refs.py` establishes identity and registry status, not that a source supports a claim. Registry behavior, publisher and funder policies, and service endpoints can change after the dates recorded in [the research notes](research.md); runtime instructions therefore require checking the governing source.

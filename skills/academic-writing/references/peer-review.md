@@ -4,7 +4,7 @@ Use for a scientific critique, a referee or panel report, or editing an existing
 
 ## Establish the review basis
 
-Identify the artifact, review purpose, stage, available materials, criteria, and requested output. Public-paper critique and an internal mock review do not imply a formal confidential assignment. For assigned reviews, follow the actual venue or sponsor's confidentiality, assistance, conflict, and competence requirements; resolve an unknown restriction before processing restricted material. Do not repeat an authorization already established in the session. Reading a file into a hosted assistant is external processing, even when the file is stored locally.
+Identify the artifact, review purpose, stage, available materials, criteria, and requested output. Public-paper critique and an internal mock review do not imply a formal confidential assignment. For assigned reviews, follow the actual venue or sponsor's confidentiality, assistance, conflict, and competence requirements ([AI-use policies](ai-use-policies.md)); resolve an unknown restriction before processing restricted material. Do not repeat an authorization already established in the session. Reading a file into a hosted assistant is external processing, even when the file is stored locally.
 
 Inspect only available evidence and state material limits, such as a missing supplement, raw data, or specialist method. Do not equate “not provided for this review” with “does not exist” or “was not performed.”
 

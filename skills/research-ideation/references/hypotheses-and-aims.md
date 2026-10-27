@@ -31,4 +31,4 @@ Express the knowledge or capability to be gained, the rationale, approach, expec
 
 An aim should have a scientific outcome beyond completing a task. Related aims may depend on one another, but identify what later work can still establish if an earlier result is negative or the preferred technique fails. Avoid inventing preliminary evidence or promising every candidate will succeed.
 
-Describe novelty relative to checked prior work, with a search boundary. The ability to articulate a hypothesis does not establish that it is new or feasible.
+Describe novelty relative to checked prior work, with a search boundary. For each option, name the closest prior approach found and what differs; if none was checked, say so and offer a bounded literature check before the novelty claim is relied on. The ability to articulate a hypothesis does not establish that it is new or feasible.

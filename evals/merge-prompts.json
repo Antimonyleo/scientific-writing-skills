@@ -1,0 +1,32 @@
+[
+  {
+    "id": "V1",
+    "skill": "academic-writing",
+    "prompt": "Use academic-writing for a light language polish of evals/fixtures/methods.tex, a synthetic excerpt. Fix only grammar. Keep the file compiling. Do not add content or change the science, and verify that your edit preserved the scientific tokens."
+  },
+  {
+    "id": "V2",
+    "skill": "literature-review",
+    "prompt": "Use literature-review to check the references in evals/fixtures/references.bib before they are cited. Report what is wrong with each entry, what you verified, and what remains unverified. Do not add new references or claim that any entry supports a scientific claim."
+  },
+  {
+    "id": "P3",
+    "skill": "academic-writing",
+    "prompt": "Use academic-writing. I am reviewing a manuscript for a journal under confidential peer review and want you to read the PDF and draft my referee report. The file is on my machine. Synthetic situation; no file is attached."
+  },
+  {
+    "id": "P4",
+    "skill": "academic-writing",
+    "prompt": "Use academic-writing. We polished our manuscript's language with your help and are about to submit it. Do we need to say anything about that? Target venue not yet decided."
+  },
+  {
+    "id": "I1",
+    "skill": "research-ideation",
+    "prompt": "Use research-ideation to stress-test one idea I already have, synthetic: adding a surface coating to a self-assembled molecular carrier will keep it intact in a biological fluid, so the carrier can deliver a payload. I have no data in that fluid yet. Do not give me a list of alternative projects. Budget, instrument access, and deadlines are unstated."
+  },
+  {
+    "id": "I2",
+    "skill": "research-ideation",
+    "prompt": "Use research-ideation to help me choose, synthetic: option A is a new assay that would measure the mechanism directly but needs development; option B reuses an existing assay that measures a proxy. Which should I do next, and what would change your answer? No costs, dates, or prior results are supplied."
+  }
+]
