@@ -19,7 +19,7 @@ Match the shape of the request before generating anything:
 | Request | Approach |
 | --- | --- |
 | Brainstorm directions, mechanisms, aims, or designs | Generate distinct options, then discriminate (below) |
-| Stress-test one idea | Rank load-bearing assumptions by how likely each is false; find the cheapest refuting observation; brief premortem |
+| Stress-test one idea | Rank load-bearing assumptions by how likely each is false; find the cheapest refuting observation; anchor to known prior work or failures (or mark unverified); brief premortem |
 | Validate a claim or prediction | Map each claim to an independent measurement, controls, and a falsifying result |
 | Choose between candidates | Compare them on explicit criteria; name the assumption that would flip the choice |
 
